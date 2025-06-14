@@ -153,10 +153,4 @@ frontend-task/
 │   │   │   └──
 ```
 
-## Deployment Notes
 
-This project provides a fully functional frontend UI. For full end-to-end functionality, such as user authentication, data persistence, and dynamic content fetching (e.g., live search results), a backend API would be required.
-
--   **Authentication:** The Login/Sign Up forms are currently UI-only. In a real application, they would interact with a backend authentication system (e.g., JWT-based authentication).
--   **Data Management:** Dynamic content (like actual expert listings or detailed service information) would typically be fetched from a database via a backend API.
--   **Deployment:** The project can be deployed as a static site (e.g., using Netlify, Vercel, GitHub Pages) after running `npm run build`. However, features requiring a backend would need appropriate server-side deployment.
