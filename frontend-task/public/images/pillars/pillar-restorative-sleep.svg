@@ -1,0 +1,7 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="150" fill="#909090"/>
+  <path d="M50 70C50 50 70 50 70 70C70 90 50 90 50 70Z" fill="#FFFFFF"/>
+  <path d="M150 70C150 50 130 50 130 70C130 90 150 90 150 70Z" fill="#FFFFFF"/>
+  <path d="M80 80C80 60 120 60 120 80C120 100 80 100 80 80Z" fill="#FFFFFF"/>
+  <text x="50%" y="80%" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Sleeping Person</text>
+</svg> 

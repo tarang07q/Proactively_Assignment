@@ -1,0 +1,6 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="150" fill="#C0C0C0"/>
+  <rect x="40" y="60" width="120" height="60" fill="#808080"/>
+  <circle cx="100" cy="50" r="25" fill="#707070"/>
+  <text x="50%" y="80%" font-family="Arial" font-size="12" fill="#666666" text-anchor="middle" dominant-baseline="middle">Happy Family</text>
+</svg> 

@@ -1,0 +1,122 @@
+@use '../../styles/main.scss' as *;
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px; /* Adjust as per design */
+  height: 100vh;
+  background-color: $background-color;
+  box-shadow: $shadow-lg;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &__header {
+    @include flex-between;
+    padding: $spacing-md $spacing-lg;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    font-weight: $font-weight-semibold;
+    color: $text-color;
+
+    img {
+      height: 24px; /* Adjust to match logo size */
+    }
+  }
+
+  &__close-btn {
+    background: none;
+    border: none;
+    font-size: $font-size-xl;
+    color: $text-light;
+    cursor: pointer;
+    padding: $spacing-xs;
+    transition: $transition-base;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__nav {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: $spacing-md 0;
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      border-bottom: 1px solid $border-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__category {
+    padding: $spacing-md $spacing-lg;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+
+    &-title {
+      font-weight: $font-weight-bold;
+      color: $text-color;
+      font-size: $font-size-base;
+      margin-bottom: $spacing-xs;
+    }
+
+    .mobile-sidebar__auth-links {
+      display: flex;
+      gap: $spacing-md;
+
+      .mobile-sidebar__auth-link {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: $font-weight-medium;
+        font-size: $font-size-sm;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    @include flex-between;
+    padding: $spacing-md $spacing-lg;
+    color: $text-color;
+    text-decoration: none;
+    font-weight: $font-weight-medium;
+    transition: $transition-base;
+
+    &:hover {
+      background-color: #f0f0f0;
+      color: $primary-color;
+    }
+  }
+
+  &__arrow {
+    color: $text-light;
+    font-size: $font-size-sm;
+  }
+} 

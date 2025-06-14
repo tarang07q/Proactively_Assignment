@@ -1,0 +1,6 @@
+<svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="150" fill="#606060"/>
+  <path d="M100 50 C120 50, 130 70, 110 90 C90 110, 70 100, 70 80 L100 50 Z" fill="#FF6347"/>
+  <circle cx="100" cy="50" r="10" fill="#FFFFFF"/>
+  <text x="50%" y="80%" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">No Smoking</text>
+</svg> 

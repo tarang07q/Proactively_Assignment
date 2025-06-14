@@ -1,0 +1,106 @@
+@use '../../styles/main.scss' as *;
+
+.auth-page {
+  @include flex-center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: $spacing-xl 0;
+
+  @include mobile {
+    padding: $spacing-lg 0;
+  }
+}
+
+.auth-container {
+  background-color: $background-color;
+  padding: $spacing-2xl;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+
+  @include mobile {
+    padding: $spacing-xl;
+    max-width: 90%;
+  }
+}
+
+.auth-title {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $text-color;
+  margin-bottom: $spacing-2xl;
+
+  @include mobile {
+    font-size: $font-size-lg;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  margin-bottom: $spacing-lg;
+}
+
+.form-group {
+  text-align: left;
+
+  label {
+    display: block;
+    font-size: $font-size-sm;
+    color: $text-color;
+    margin-bottom: $spacing-xs;
+    font-weight: $font-weight-medium;
+  }
+
+  input {
+    width: 100%;
+    padding: $spacing-sm $spacing-md;
+    border: 1px solid $border-color;
+    border-radius: $border-radius-md;
+    font-size: $font-size-base;
+    color: $text-color;
+    transition: $transition-base;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 3px rgba($primary-color, 0.1);
+    }
+
+    &::placeholder {
+      color: $text-light;
+    }
+  }
+}
+
+.auth-btn {
+  width: 100%;
+  padding: $spacing-md $spacing-lg;
+  font-size: $font-size-lg;
+  margin-top: $spacing-md;
+
+  @include mobile {
+    font-size: $font-size-base;
+  }
+}
+
+.auth-toggle-text {
+  font-size: $font-size-sm;
+  color: $text-color;
+  margin-top: $spacing-md;
+
+  .auth-toggle-link {
+    color: $primary-color;
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+} 
